@@ -76,6 +76,11 @@ label{
 }
 .vignette img:first-of-type {
     margin-left: 8%;
+    margin-right: 3%;
+}
+.vignette img:last-of-type {
+    margin-left: 3%; 
+    margin-right: 8%;
 }
 .picture{
     display: flex;
@@ -86,6 +91,7 @@ img {
     width: 25%;
     margin-right: 3%;
     margin-bottom: 3%;
+
 }
 footer{
     text-align: center;
@@ -141,6 +147,10 @@ border-radius: 5px;
         font-size: 0.6em;
     }
     .vignette img:first-of-type {
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    .vignette img:last-of-type {
         margin: auto;
         margin-bottom: 2%;
     }
