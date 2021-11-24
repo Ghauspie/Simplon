@@ -95,3 +95,45 @@ body.dark-theme a{
     border: wheat solid 2px;
 border-radius: 5px;
 }
+
+/* Partie carrousel */
+#slider {
+    width: 100%;
+    margin: 0% 10%;
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 2%;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: center;
+    animation: 10s slidy infinite;
+  }
+
+  div#slider figure img { 
+      width: 25%; 
+      height: 45vh; 
+      float: left; 
+    text-align:center;
+    margin:auto;
+    }
+
+  div#slider { 
+      width: 80%; 
+      max-width: 1000px; 
+      overflow: hidden 
+    }
+    
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: 0%; }
+    45% { left: -133%; } 
+    50% { left: -133%; }
+    70% { left: -133%; }
+    75% { left: -266%; }
+    95% { left: -266%; }
+    100% { left: -266%; }
+  }
