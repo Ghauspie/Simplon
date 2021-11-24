@@ -79,10 +79,9 @@ label{
 }
 .picture{
     display: flex;
+    flex-direction: row-reverse;
 }
-.picture img {
-    flex-direction: column;
-}
+
 img {
     width: 25%;
     margin-right: 3%;
@@ -113,6 +112,38 @@ body.dark-theme a{
     background-color: wheat;
     border: wheat solid 2px;
 border-radius: 5px;
+}
+/* Zone Responsif */
+@media screen and (max-width:700px) {
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 0.8;
+    }
+    h3 {
+        font-size: 0.7em;
+    }
+    p{
+        font-size: 0.6em;
+    }
+    .picture {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture img {
+        width: 70%;
+        margin: auto; 
+        margin-bottom: 2%;     
+    }
+    label{
+        font-size: 0.6em;
+    }
+    .vignette img:first-of-type {
+        margin: auto;
+        margin-bottom: 2%;
+    }
 }
 
 /* Partie carrousel */
