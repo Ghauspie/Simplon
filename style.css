@@ -227,3 +227,30 @@ div#slider figure {
     width: 100%;
     height: 20vh;
 }
+/* Paralax */
+ #parallax{
+    background-image: url(./picture/japan.jpg);
+
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+} 
+img .hidden{
+    visibility: visible;
+    width: 25%;
+    height: 20vh;
+}
+.kendoAnimate img{
+    visibility : hidden;
+}
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }

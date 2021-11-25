@@ -8,6 +8,7 @@
     <title>Kendo kesako ?</title>
 </head>
 <body>
+
     <nav>
         <ul>
             <li>
@@ -22,9 +23,17 @@
             <button class="DarkMode">Dark Mode</button>
         </ul>
     </nav>
+
+        <div id="parallax" class="kendoAnimate">
+            <h1>Kendo</h1>
+            <img id="P1" src="./picture/P1.png" alt="">
+            <img id="P2" src="./picture/P2.png" alt="">
+            <img id="P3" src="./picture/P3.png" alt="">
+
+        </div>
     <main>
         <section>
-            <h1> Le kendo kesako ?</h1>
+            <h2> Le kendo kesako ?</h2>
             <div class="vignette">
                 <p> Le kendo (剣道 / 劍道, kendō?, littéralement « la voie du sabre ») est la version moderne du kenjutsu (剣術?, techniques du sabre), l'escrime au sabre pratiquée autrefois au Japon par les samouraïs. Par version moderne, il faut comprendre que le kendo n'est pas seulement un art martial mais également un sport de compétition, aujourd'hui largement pratiqué au Japon.<br>
                 Le kendo ne se résume toutefois pas à un simple ensemble de techniques et de tactiques du combat au sabre. Il comprend également un volet spirituel. Le kendo permet à ses pratiquants de développer leur force de caractère et leur détermination.</p>
@@ -33,53 +42,6 @@
                     <img src="https://th.bing.com/th/id/OIP.M3sGIQUbRh-DnxHKtCZoSQHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7" alt="Image de bokken">
                     <img src="data:image/jpeg;base64,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" alt="Armure de kendo">
                 </div>
-
-  <!--                   <aside class="carousel__navigation">
-                        <ol class="carousel__navigation-list">
-                          <li class="carousel__navigation-item">
-                            <img src="https://i.pinimg.com/originals/69/a1/82/69a1824d02e29c8ca72deae49c7e6164.jpg">
-                          </li>
-                          <li class="carousel__navigation-item">
-                            <img src="https://weblog.tozando.com/wp-content/uploads/2018/04/Bamboo.Blade_.full_.244985.jpg">
-                          </li>
-                        </ol>
-                    </aside> -->
-<!--                     <input checked='checked' class='carousel__activator' id='carousel-slide-activator-1' name='carousel' type='radio'>
-                    <input class='carousel__activator' id='carousel-slide-activator-2' name='carousel' type='radio'>
-                     <input class='carousel__activator' id='carousel-slide-activator-3' name='carousel' type='radio'> 
-                    <div class='carousel__controls'>
-                    <label class='carousel__control carousel__control--forward' for='carousel-slide-activator-2'>
-                        👉
-                      </label>
-                    </div>
-                    <div class='carousel__controls'>
-                      <label class='carousel__control carousel__control--backward' for='carousel-slide-activator-1'>
-                        👈
-                      </label>
-                      </div>
-                      
-                      <div class='carousel__screen'>
-                        <div class='carousel__track'>
-                          <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
-                            <div class='demo-content'>
-                                <img src="https://th.bing.com/th/id/OIP.8I1ykHlnpFLRE_P97xsL8wHaJ4?w=141&h=188&c=7&r=0&o=5&pid=1.7" alt="image de shinai">
-                                
-                            </div>
-                          </div>
-                          <div class='carousel__item carousel__item--mobile-in-1 carousel__item--tablet-in-2 carousel__item--desktop-in-3'>
-                            <div class='demo-content'>
-                                <img src="https://th.bing.com/th/id/OIP.M3sGIQUbRh-DnxHKtCZoSQHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7" alt="Image de bokken">
-                            </div>
-                          </div>
-                          </div>
-                      </div>
-                                          <input type="button" name="last" id="last" value="<" checked>
-                    <div class="PicCarou">
-                    <img id="img1" src="https://th.bing.com/th/id/OIP.8I1ykHlnpFLRE_P97xsL8wHaJ4?w=141&h=188&c=7&r=0&o=5&pid=1.7" alt="image de shinai">
-                    <img id="img2"src="https://th.bing.com/th/id/OIP.M3sGIQUbRh-DnxHKtCZoSQHaHa?w=177&h=180&c=7&r=0&o=5&pid=1.7" alt="Image de bokken">
-                 </div>
-                    <input type="button" name="next" id="next" value=">"checked> -->
-
                 <div id="slider">
                     <figure>
                         <img src="https://img5.goodfon.com/wallpaper/nbig/9/9a/by-masato-satofuji-anata-no-koto-o-suki-to-iwasete-visual--3.jpg" alt="Kendo manga">
@@ -160,9 +122,7 @@
                 </div>
             </form>
         </section>
-        <section class="kendoAnimate">
 
-        </section>
     </main>
     <footer>
         <p>Created by Ghauspie <b> | </b> <span id="dateDay"</span></p>
@@ -218,10 +178,39 @@
 
         <script>
             let KendoAnimate=document.querySelector('.kendoAnimate');
-            const UPDATE = ({ x, y }) => {
+/*             const UPDATE = ({ x, y }) => {
             KendoAnimate.innerText = `x: ${x}; y: ${y}`
             }
-            document.addEventListener('pointermove', UPDATE)
+            document.addEventListener('pointermove', UPDATE) */
+            /* document.addEventListener("mousemove", parallax); */
+            document.addEventListener('mousemove', parallax)
+            function parallax(event){
+                if(event.pageX <=100 && event.pageY >=100 && event.pageY<=800){
+                    let p1=document.querySelector('#P1')
+                    p1.setAttribute('class',"hidden")
+                    let p2=document.querySelector('#P2')
+                    let p3=document.querySelector('#P3')
+                    p2.removeAttribute
+                    p3.removeAttribute;
+                }
+                if(event.pageX <=300 && event.pageX >100 && event.pageY >=100 && event.pageY<=800){
+                    let p2=document.querySelector('#P2')
+                    p2.setAttribute('class',"hidden")
+                    let p1=document.querySelector('#P1')
+                    let p3=document.querySelector('#P3')
+                    p1.removeAttribute
+                    p3.removeAttribute;
+                }
+                if(event.pageX <=500 && event.pageX >300 && event.pageY >=100 && event.pageY<=800){
+                    let p3=document.querySelector('#P3')
+                    p3.setAttribute('class',"hidden")
+                    let p1=document.querySelector('#P1')
+                    let p2=document.querySelector('#P2')
+                    p1.removeAttribute
+                    p2.removeAttribute;
+                }
+                console.log(event)
+            }
         </script>
 
 </body>
